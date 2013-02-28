@@ -1,0 +1,1 @@
+table.report {    border-left: 1px solid #CAD3DC;    border-top: 1px solid #CAD3DC;    font-size: 100%;}table.report tr td, table.report tr th {    border-bottom: 1px solid #CAD3DD;    border-right: 1px solid #CAD3DD;    padding: 2px 4px;}table.report tr.even td {    background-color: #FFFFFF;}table.report tr.odd td {    background-color: #E9ECF0;}

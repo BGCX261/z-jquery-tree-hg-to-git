@@ -1,0 +1,10 @@
+/* */
+.Icon {
+    width: 22px;
+    height: 22px;
+    float: left;
+}
+.IconShop  { background:url(icon/shop.gif) center center no-repeat; }
+.IconSection  { background: url(icon/section.gif) center center no-repeat; }
+.IconPoint  { background: url(icon/point.gif) center center no-repeat; }
+.IconAnalysis  { background: url(icon/analysis.gif) center center no-repeat; }

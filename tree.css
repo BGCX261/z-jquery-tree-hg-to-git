@@ -1,0 +1,54 @@
+/* tree */
+.Container { padding: 0; margin: 0; font-size:16px; vertical-align:middle;}
+.Container li { list-style-type: none; }
+/* */
+.Content { min-height: 22px; margin-left:22px; }
+* html .Content { height: 22px; }
+/* indent for all tree children excepts root */
+.Node {
+    background-image : url(img/i.png);
+    background-position : top left;
+    background-repeat : repeat-y;
+    margin-left: 22px;
+    zoom: 1;
+}
+.IsRoot {
+    margin-left: 0;
+}
+/* left vertical line (grid) for all nodes */
+.IsLast {
+    background-image: url(img/i_h.png);
+    background-repeat : no-repeat;
+}
+.ExpandOpen .Expand {
+    background-image: url(img/e_m.png);
+}
+/* closed is higher priority than open */
+.ExpandClosed .Expand {
+    background-image: url(img/e_p.png);
+}
+/* highest priority */
+.ExpandLeaf .Expand {
+    background-image: url(img/e_l.png);
+}
+.Expand {
+    width: 22px;
+    height: 22px;
+    float: left;
+}
+.ExpandOpen .Container {
+        display: block;
+}
+.ExpandClosed .Container {
+        display: none;
+}
+.ExpandOpen .Expand, .ExpandClosed .Expand {
+        cursor: pointer;
+}
+.ExpandLeaf .Expand {
+        cursor: auto;
+}
+/* icons */
+.ExpandClosed .ExpandError  { background: url(img/error.gif) center center no-repeat; }
+.ExpandClosed .ExpandLoading  { background: url(img/loading.gif) center center no-repeat; }
+/* */
